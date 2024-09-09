@@ -1,23 +1,24 @@
 import React from 'react';
 import styles from "./Card.module.css"
-import cat01Img from "./../../img/categories/cat-01.jpg"
 import arrow from "./../../img/icons/arrow.svg"
 
-const Card = () => {
+const Card = ({img, title}) => {    
     return (
         <div className={styles.card}>
-            <img className={styles.card__img} src={cat01Img} alt="img" />
+            <a href="#!" className={styles.card__link}></a>
+            <img className={styles.card__img} src={img} alt="img" />
+
             <div className={styles.card__body}>
                 <div className={styles.card__text}>
                     <div className={styles.card__title}>
-                    Hoodies & Sweetshirt
+                    {title}
                     </div>
                     <div className={styles.card__muted}>
                     Explore Now!
                     </div>
                 </div>
                 <div className={styles.card__icon}>
-                    <img src={arrow} alt="" />
+                    <img src={arrow} alt="img" />
                 </div>
             </div>    
         </div>
