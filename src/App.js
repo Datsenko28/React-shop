@@ -1,10 +1,15 @@
+import Arrivals from "./components/arrivals/Arrivals";
+import Brands from "./components/brands/Brands";
 import Header from "./components/header/Header";
+import Promo from "./components/promo/Promo";
+
 function App() {
-  const p = "fashion";
   return (
     <div className="App">
-      <h1>{p}</h1>
       <Header />
+      <Promo />
+      <Brands />
+      <Arrivals />
     </div>
   );
 }

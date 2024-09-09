@@ -1,0 +1,11 @@
+.brands{
+background-color: rgb(235, 217, 107);
+padding: 60px 0 55px;
+}
+.brand__list{
+display: flex;
+column-gap: 120px;
+mix-blend-mode: multiply;
+
+
+}
